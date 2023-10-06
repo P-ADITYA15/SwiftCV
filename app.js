@@ -59,6 +59,6 @@ app.post('/Resume%20view', upload.single('image'), (req, res) => {
 
 
 
-app.listen(4000,function(){
-    console.log("server is running")
-})
+const port = 5000
+
+app.listen(process.env.PORT || port, () => console.log(`Listening on port ${port}`))
