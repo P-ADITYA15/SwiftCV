@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+   
+    
+}
+.nav{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    border: 1px solid black;
+   
+}
+.nav > div{
+    padding: 10px;
+  
+    border: 1px solid black;
+    border-top: 0;
+    
+
+    
+}
+.nav > div:hover{
+   background-color: rgb(243, 233, 179);
+   /* box-shadow: 10px 2px 10px 5px gold; */
+  border: 2px solid gold;
+}
+.logo{
+    /* margin: 10px; */
+    /* margin: 2px; */
+    height: 5em;
+   background-color: white;
+
+   border: 1px solid black;
+   border-right: 2px solid black;
+}
+.logo:hover{
+    border: 0;
+    box-shadow: 10px 2px 10px 5px gold;
+    /* height: 75px; */
+}
+
+.nav > div:last-child{
+    border-left: 2px solid black;
+}
+.nav > div:last-child:hover{
+    border-left: 2px solid gold;
+}
+
+
+
+.header{
+    margin-top: 3%;
+}
+
+
+.container{
+    margin: 5%;
+    margin-top: 3%;
+}
+
+.resume{
+    padding: 10px;
+    border: 3px solid black;
+    margin: auto;
+}
+.resume:hover{
+    border: 3px solid gold;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    /* display: inline; */
+    justify-content: center;
+   
+}
+
+form > input{
+    padding: 10px;
+    margin: 10px 2% 10px 2%;
+    width: 200px;
+}
+
+
+form > textarea{
+    padding: 10px;
+    margin: 10px 2% 10px 2%;
+    width: 200px;
+}
+
+
+
+

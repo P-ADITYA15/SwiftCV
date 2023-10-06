@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="aslogo.png">
+</head>
+<body>
+
+    <div class="navbar">
+        <img class="logo" src="aslogo.png" alt="check">
+    <nav class="nav">
+        <div>CONTACT</div>
+        <div>HOW TO USE</div>
+        <div>TEMPLATES</div>
+    </nav>
+    </div>
+
+    <div class="header">
+        <center><h1>RESUME BUILDER</h1></center>
+    </div>
+
+
+
+    <div class="container">
+        
+        <div class="resume">
+            <form  method="post" action="/Resume view" enctype="multipart/form-data">
+                <input type="file" name="image" placeholder="photourl" accept="image/*" required>
+                <input type="text" name="name" placeholder="name">
+                <input type="date" name="dob" placeholder="DOB">
+                <input type="email" name="email" placeholder="emial">
+                <input type="number" name="phone" placeholder="phone-number">
+                <input type="text" name="prof" placeholder="profession">
+                <input type="text" name="place" placeholder="place">
+                <input type="text" name="link" placeholder="protfolio-link">
+                <input type="number" name="tenzero" placeholder="10th Percentage">
+                <input type="number" name="tentwo" placeholder="12th Percentage">
+                <input type="number" name="eng" placeholder="Current Cgpa">
+                <textarea name="exp1" placeholder="#1 Experience" cols="30" rows="2"></textarea>
+                <textarea name="exp2" placeholder="#2 Experience" cols="30" rows="2"></textarea>
+                <textarea name="exp3" placeholder="#3 Experience" cols="30" rows="2"></textarea>
+                <textarea name="about" placeholder="About Yourself" cols="30" rows="2"></textarea>
+                <textarea name="ach1" placeholder="#1 School" cols="30" rows="2"></textarea>
+                <textarea name="ach2" placeholder="#2 High School" cols="30" rows="2"></textarea>
+                <textarea name="ach3" placeholder="#3 College" cols="30" rows="2"></textarea>
+                <textarea name="skills" placeholder="hard Skills" cols="20" rows="2"></textarea>
+                <textarea name="skill" placeholder="Languages" cols="20" rows="2"></textarea>
+                <textarea name="ref" placeholder="references" cols="20" rows="2"></textarea>
+                
+                <!-- <button class="submit" type="submit" name="submit">GENRATE</button> -->
+                <input type="submit" name="" id="">
+                
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <footer></footer>
+    </div>
+
+
+
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
