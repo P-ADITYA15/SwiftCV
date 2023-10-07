@@ -37,8 +37,11 @@ app.post('/Resume%20view', upload.single('image'), (req, res) => {
       const imageUrl = '/uploads/' + req.file.filename;
       res.render('resume', { imageUrl:imageUrl ,name:req.body.name , email:req.body.email , phone:req.body.phone 
         , prof:req.body.prof , place:req.body.place,
-      skill:(req.body.skills).split(" "), lang:(req.body.skill).split(" ") , exp1:(req.body.exp1).split("\n") ,exp2:(req.body.exp2).split("\n"),exp3:(req.body.exp3).split("\n"),
-      dob:req.body.dob,link:req.body.link,ach1:(req.body.ach1).split("\n") ,ach2:(req.body.ach2).split("\n"),ach3:(req.body.ach3).split("\n")
+      
+      dob:req.body.dob,link:req.body.link,skill:req.body.skill
+      ,lang:req.body.lang
+      ,exp:req.body.exp
+      ,edu:req.body.edu
     });
     } else {
       // Handle errors if the upload failed
