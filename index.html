@@ -6,6 +6,7 @@
     <title>Resume Builder</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="aslogo.png">
+
 </head>
 <body>
 
@@ -27,7 +28,13 @@
     <div class="container">
         
         <div class="resume">
-             <form  method="post" action="/Resume view" enctype="multipart/form-data">
+            <center><h2>About You</h2></center>
+            <br>
+            <hr>
+            <br><br>
+            <form  method="post" action="/Resume view" enctype="multipart/form-data">
+            
+               
                 <input type="file" name="image" placeholder="photourl" accept="image/*" required>
                 <input type="text" name="name" placeholder="name">
                 <input type="date" name="dob" placeholder="DOB">
@@ -36,31 +43,49 @@
                 <input type="text" name="prof" placeholder="profession">
                 <input type="text" name="place" placeholder="place">
                 <input type="text" name="link" placeholder="protfolio-link">
-                <input type="text" name="tenzero" placeholder="10th Percentage">
-                <input type="text" name="tentwo" placeholder="12th Percentage">
-                <input type="text" name="eng" placeholder="Current Cgpa">
-                <textarea name="exp1" placeholder="#1 Experience" cols="30" rows="2"></textarea>
-                <textarea name="exp2" placeholder="#2 Experience" cols="30" rows="2"></textarea>
-                <textarea name="exp3" placeholder="#3 Experience" cols="30" rows="2"></textarea>
-                <textarea name="about" placeholder="About Yourself" cols="30" rows="2"></textarea>
-                <textarea name="ach1"  placeholder="School Name
-Year of passing
-Subjects opted & exp" cols="30" rows="2"></textarea>
-                <textarea name="ach2" placeholder="High School
-Year of passing 
-Subjects opted & exp" cols="30" rows="2"></textarea>
-                <textarea name="ach3" placeholder="College name
-Year of passing 
-Subjects opted & exp" cols="30" rows="2"></textarea>
-                <textarea name="skills" placeholder="#1hard #2skill #3skill #4skill" cols="20" rows="2"></textarea>
-                <textarea name="skill"  placeholder="#1Languages #2Languages #3Languages" cols="20" rows="2"></textarea>
-                <textarea name="ref" placeholder="references" cols="20" rows="2"></textarea>
-                
-                <!-- <button class="submit" type="submit" name="submit">GENRATE</button> -->
-                <input type="submit" name="" id="">
+               
+                <div id="div1"><br><br>
+                    <hr>
+                   <center> <h2>Skills   <input type="button" onclick="add()" class="add" value="+"></h2></center>
+                   <hr><br><br>
+                    
+                    <input type="text" name="skill" placeholder="Skills">
+                    <!-- <input type="button" onclick="add()" class="add" value="Add"> -->
+                </div>
+
+                <div id="div2">
+                    <br><br>
+                    <hr>
+                    <center><h2>Languages   <input type="button" onclick="add1()" class="add" value="+"></h2></center>
+                    <hr><br><br>
+                    <input type="text" name="lang" placeholder="Language">
+                   
+                </div>
+
+                <div id="div3">
+                <br><br>
+                <hr>
+                <center><h2>Experience   <input type="button" onclick="add2()" class="add" value="+"></h2></center>
+                <hr><br><br>
+                <input type="text" name="exp" placeholder="Company Name">
+                <input type="date" name="exp" placeholder="dob">
+                <textarea name="exp" id="" cols="30" rows="2" placeholder="about it"></textarea>
+               
+            </div>
+
+            <div id="div4"> <br><br>
+                <hr>
+                <center><h2>Education     <input type="button" onclick="add3()" class="add" value="+"></h2></center>
+                <hr><br><br>
+                <input type="text" name="edu" placeholder="Institution Name">
+                <input type="date" name="edu" placeholder="dob">
+                <textarea name="edu" id="" cols="30" rows="2" placeholder="about it"></textarea>
+             
+            </div>
+               
+                <input type="submit" name="" id="button">
                 
             </form>
-            
         </div>
     </div>
 
@@ -69,10 +94,6 @@ Subjects opted & exp" cols="30" rows="2"></textarea>
         <footer></footer>
     </div>
 
-
-
-    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
-    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
     <script src="script.js"></script>
     
 </body>
